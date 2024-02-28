@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    color: rgb(164, 30, 30);
+    background: black;
+}
+body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: cursive;
+    font-style: italic;
+}
+a{
+   text-decoration: none; 
+}
+header{
+    background-color:rgba(150, 56, 56, 0.889);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header a{
+    color: rgb(223, 2, 2);
+}
+#logo{
+    margin: 0 auto;
+    font-size: 30px;
+}
+#menu li{
+    padding: 10px;
+}
+#social-links li{
+    padding: 10px;
+}
+#main{
+    display: flex;    
+}
+aside{
+    flex-basis: 0 0 20vw;
+    background: rgba(172, 120, 120, 0.889);
+    padding: 10px;
+}
+article{
+    padding:10px;
+}
+aside ul{
+    list-style: none;
+    padding: 0%;
+}
+aside ul a{
+    color: rgb(142, 114, 114);
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid brown;
+}
+aside img{
+    width: 100%;
+}
+.services-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-box{
+   border: 1px solid red; 
+   flex-basis: 32%;
+   max-width: 370px;
+   padding: 10px;
+   
+   margin-bottom: 15px;
+   display: flex;
+   flex-direction: column;
+}
+.service-box img{
+    width: 100%;
+
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.call-to-action a{ 
+   background: rgb(142, 114, 114);
+   border: 2px solid transparent;
+   color: rgb(232, 13, 13);
+   padding: 8px 13px;
+   display: block;
+}
+.call-to-action a:hover{
+    color: rgb(200, 127, 127);
+    background: transparent;
+    border: 2px solid rgb(175, 121, 121);
+}
+footer{
+     background: rgb(103, 33, 33);
+     color: aliceblue;
+     text-align: center;
+     padding: 15px 0;
+}
+@media screen and (max-width: 850px){
+.service-box{
+    flex-basis: 44%;
+    max-width: 370px;
+}
+aside{
+    flex: 0 0 30vw;
+     }
+}
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        order: -1;
+    }
+    #main{
+       flex-direction:column; 
+    }
+    article{
+        order: -1;
+    }
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+}
+
+    
